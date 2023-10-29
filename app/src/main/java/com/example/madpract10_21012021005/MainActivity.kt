@@ -30,14 +30,7 @@ class MainActivity : AppCompatActivity() {
             val lat:String= arr[position].lat.toString()
             val log:String= arr[position].long.toString()
 
-            val intent = Intent(this, ContactDetails::class.java)
-            intent.putExtra("_id",id)
-            intent.putExtra("name", name)
-            intent.putExtra("num", num)
-            intent.putExtra("addr", addr)
-            intent.putExtra("lat",lat)
-            intent.putExtra("log",log)
-            startActivity(intent)
+
 
         }
         contacts().execute()
